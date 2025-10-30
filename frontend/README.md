@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# F1 DeFi Security Dashboard - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A professional F1-themed DeFi security dashboard built with React for monitoring MEV attacks, smart contract security, and real-time blockchain threats.
+
+## Features
+
+- **F1 Racing Theme**: Carbon fiber textures, racing colors (Red, Yellow, Green), and immersive loading experiences
+- **Wallet Integration**: MetaMask wallet connection with WalletConnect and Coinbase Wallet support (coming soon)
+- **Interactive Loading**: F1 race track loading animation with start lights and sound effects
+- **Real-time Dashboard**: Live transaction monitoring, risk meter, and security alerts
+- **Protected Routes**: Secure routing with wallet authentication
+- **Responsive Design**: Optimized for desktop (1280px minimum width)
+
+## Tech Stack
+
+- **React 18** - UI framework
+- **React Router v6** - Client-side routing
+- **Ethers.js** - Ethereum interaction
+- **Recharts** - Data visualization
+- **Web3** - Blockchain connectivity
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js v16 or higher
+- npm or yarn
+- MetaMask browser extension (for wallet connection)
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+The application will open at [http://localhost:3000](http://localhost:3000)
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000)
 
 ### `npm run build`
+Builds the app for production to the `build` folder
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `npm test`
+Launches the test runner in interactive watch mode
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Sound Effects
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The loading screen includes F1-themed sound effects. To enable audio:
 
-### `npm run eject`
+1. Navigate to `src/assets/sounds/`
+2. Read the `README.md` file for required sound files
+3. Add MP3 files with the exact names listed
+4. Restart the development server
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The app will gracefully handle missing sound files.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Connecting a Wallet
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Visit the landing page
+2. Click "CONNECT WALLET"
+3. Select MetaMask from the modal
+4. Approve the connection in MetaMask
+5. Wait for the F1 loading animation
+6. Access the dashboard
 
-## Learn More
+### Navigation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Use the sidebar to navigate between pages:
+- **Dashboard** - Overview with metrics and charts
+- **Mempool** - Real-time mempool monitoring
+- **Protection** - MEV protection settings
+- **Alerts** - Security alert history
+- **Analytics** - Advanced analytics
+- **Settings** - User preferences
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Browser Support
 
-### Code Splitting
+- Chrome (latest 2 versions)
+- Firefox (latest 2 versions)
+- Edge (latest 2 versions)
+- Safari (latest 2 versions)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Note:** Desktop only (minimum width: 1280px)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Built for the F1 DeFi Security Hackathon**
