@@ -1,0 +1,79 @@
+/* Dashboard Page Styles */
+
+.dashboard-page {
+  width: 100%;
+}
+
+/* Page Header */
+.page-header {
+  /* NEW: Add a subtle border/separator to the header area for professionalism */
+  border-bottom: 1px solid var(--border-light); 
+  padding-bottom: 20px;
+  margin-bottom: 30px; /* Increase margin for space */
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.page-subtitle {
+  font-size: 14px;
+  color: var(--text-gray);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-dot-green {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--f1-green);
+  box-shadow: 0 0 10px var(--f1-green);
+}
+
+/* NEW: Status Dot Red (For Disconnected State) */
+.status-dot-red {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--f1-red);
+  box-shadow: 0 0 10px var(--f1-red);
+}
+
+/* Metrics Grid */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Bottom Grid */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bottom-left {
+  min-height: 400px;
+}
+
+.bottom-right {
+  min-height: 400px;
+}
+
+/* Responsive adjustments for smaller desktops */
+@media (max-width: 1600px) {
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+}

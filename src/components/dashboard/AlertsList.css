@@ -1,0 +1,81 @@
+/* Alerts List Styles */
+
+.alerts-list-card {
+  /* UPDATED: Consistent professional card look */
+  background: linear-gradient(145deg, var(--bg-secondary) 0%, var(--bg-darker) 100%);
+  border: 1px solid var(--border-medium);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); 
+  height: 100%; /* Ensure it fills the grid space */
+}
+
+.alerts-header {
+  border-bottom: 2px solid var(--border-light);
+  padding-bottom: 12px;
+  margin-bottom: 15px;
+}
+
+.alerts-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.alerts-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.alert-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.alert-item:last-child {
+  border-bottom: none;
+}
+
+.alert-icon {
+  font-size: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.alert-content {
+  flex: 1;
+}
+
+.alert-message {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 5px;
+  line-height: 1.4;
+}
+
+.alert-time {
+  font-size: 11px;
+  color: var(--text-gray);
+}
+
+/* Alert Type Styles */
+.alert-item.critical .alert-message {
+  color: var(--f1-red);
+  font-weight: 600; /* Bolder */
+  text-shadow: 0 0 5px rgba(225, 6, 0, 0.2); /* Subtle red glow */
+}
+
+.alert-item.warning .alert-message {
+  color: var(--f1-yellow);
+}
+
+.alert-item.resolved .alert-message {
+  color: var(--f1-green);
+}
+
+.alert-item.info .alert-message {
+  color: #ffffff;
+}
